@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 2.2;
+}
+
+header {
+    background-color: rgb(255, 127, 138);
+    color: rgb(240, 248, 255);
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name-banner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+ header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+header .logo img{
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+header .name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    color: #981010;
+    margin-bottom: 10px;
+
+    }
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0e0d0d;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
