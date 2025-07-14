@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const message = document.getElementById("message");
     const email = document.getElementById("email");
     const name = document.getElementById("name");
+    const phonenumber = document.getElementById("phonenumber");
     const submitButton = document.getElementById("submit-button");
 
     const nameError = document.getElementById("name-error");
     const emailError = document.getElementById("email-error");
     const messageError = document.getElementById("message-error");
+    const phonenumberError = document.getElementById("phonenumber-error");
         const successMessage = document.getElementById("success-message");
         const errorMessage = document.getElementById("error-message");
         
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         nameError.textContent = "";
         emailError.textContent = "";
         messageError.textContent = "";
+        phonenumberError.textContent = "";
         successMessage.style.display = "none";
 
         // Validate name
@@ -59,6 +62,15 @@ document.addEventListener("DOMContentLoaded", function() {
             valid = false;
         } else if (!/\S+@\S+\.\S+/.test(email.value)) {
             emailError.textContent = "Please enter a valid email address.";
+            valid = false;
+        }
+        // Validate phone number
+        if (phonenumber.value.trim() === "") {
+            phonenumberError.textContent = "Phone number is required.";
+            valid = false;
+        }
+        else if (!/^\d{10}$/.test(phonenumber.value)) {
+            phonenumberError.textContent = "Phone number must be 10 digits.";
             valid = false;
         }
 

@@ -6,7 +6,7 @@ body {
     line-height: 2.2;
     font-size: 16px;
     color: #333;
-    background-color: #3e0202;
+    background-color: #f4bdbd;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.8em;
 }
@@ -167,6 +167,14 @@ input[type="submit"]:hover {
     font-size: 14px;
     margin-top: 10px;
 }
+
+.success-message,
+.error-message {
+    display: none;
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
 nav ul li {
     display: inline;
 }
@@ -196,6 +204,20 @@ section h2 {
     margin-bottom: 10px;
 
     }
+    contact {
+        padding-bottom: 120px;
+
+    }
+
+    #contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;
+    box-sizing: border-box
+    
+}
+
 
 
 footer {
