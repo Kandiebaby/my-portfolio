@@ -61,9 +61,34 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you would like to get in touch, please feel free to reach out via email.</p>
-        <p>jodiank_jojo@yahoo.com</p>
+        <form id="contact-form"> novalidate
+            <p>Please fill out the form below to get in touch with me.</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small class="error-message" id="name-error"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error-message" id="email-error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small class="error-message" id="message-error"></small>
+
+            <button type="submit">Send Message</button>
+            <p class="success-message" id="success-message"></p>
+            Message sent successfully!
+        </p>
+        <p id="error-message" class="error-message"></p>
+        Please fill out all fields correctly.
+    </p>
+        </form>
+        <p>If you prefer not to use the form, you can also contact me via email</p>
+        <p>Email: <a href="mailto: jodiank_jojo@yahoo.com"> jodiank_jojo@yahoo.com</a></p>
+    
+
     </section>
+
 
     
 
