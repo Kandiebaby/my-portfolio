@@ -223,11 +223,15 @@ section h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #0e0d0d;
+    background-color: #333;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+body {
+    padding-bottom: 50px; /* Space for footer */
 }
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 600px) {
