@@ -7,6 +7,7 @@ body {
     color: #333;
     background-color: #f4bdbd;
 
+
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 body {
     background-color: #f4bdbd;
     color: #333;
-    transition: all 0.3s ease;  
+  
 }
 nav {
     background-color: #f78e8e;
@@ -70,6 +71,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 .name-banner {
@@ -110,6 +112,8 @@ header .name {
     color: #5f0505;
     margin-top: 10px;
     min-height: 30px; /* Ensure space is reserved even when empty */
+
+
 }
 
 /* Navigation bar container */
@@ -119,6 +123,7 @@ nav {
     justify-content: center;
     padding: 10px 20px;
     border-radius: 8px;
+
 }
 
 /* Navigation links */
@@ -148,11 +153,14 @@ nav ul li:hover {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+   
 }
 
 .project button:hover {
     background-color: #e67e7e;
     color: white;
+   
 }
 
 .project h3 {
@@ -169,12 +177,14 @@ nav ul li:hover {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+
 }
 
 .toggle-details {
     cursor: pointer;
     color: #f0ecec;
     text-decoration: underline;
+
 }
 
 .toggle-details:hover {
@@ -186,6 +196,8 @@ nav ul li:hover {
     margin-top: 10px;
     font-size: 16px;
     color: #333; 
+
+
 }
 .project-description a {
     margin: 5px 0;
@@ -273,7 +285,10 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
 }
+
 
 section h2 {
     font-size: 28px;
