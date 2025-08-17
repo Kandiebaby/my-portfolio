@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     toggleButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const projectDescription = button.nextElementSibling.nextElementSibling;
+            const projectDescription = button.nextElementSibling;
 
             console.log('Project Description:', projectDescription);
             if (projectDescription) {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var typed = new Typed("#typed-output", {
         strings: [
                 "Welcome to my Portfolio." , 
-                 "Checkout my projects below.",
+                "Checkout my projects below.",
          ],
         typeSpeed: 50,
         backSpeed: 30,
@@ -97,7 +97,17 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         showCursor: true
     });
-
-        // Remove duplicate Typed.js initialization if not needed
-        // var typed = new Typed("#typed-output", options);
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Light Mode';
+        } else {
+            darkModeToggle.textContent = 'Dark Mode';
+        }
+    });
+});
