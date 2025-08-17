@@ -209,6 +209,64 @@ nav ul li:hover {
     color: #6a0202;
 }
 
+#skills {
+
+    padding: 40x;
+    margin: 40px;
+    max-width: 3000px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.skill {
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    background-color: #f4ecec;
+    margin: 10px;
+}
+.skill h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #5f0505;
+}
+
+.progress {
+    height: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar {
+    background-color: #f4ecec;
+    height :20px;
+    border-radius: 10px;
+    overflow : hidden;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+    
+
 form {
     display: flex;
     flex-direction: column;

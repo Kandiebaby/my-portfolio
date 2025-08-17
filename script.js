@@ -111,3 +111,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling for Skills section
+    const skillsSection = document.querySelector('#skills');
+    const progressBars = document.querySelectorAll('.progress-bar');
+    
+   
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                progressBars.forEach(bar => {
+                    const width = bar.querySelector('.progress').style.width;
+                    bar.querySelector('.progress').style.width = '0%'; // Reset width
+                    setTimeout(() => {
+                        bar.querySelector('.progress').style.width = width; // Animate to original width
+                    }, 100);
+                });
+                        observer.unobserve(skillsSection);
+                    }
+                });
+            }, { threshold: 0.5 });
+        
+            observer.observe(skillsSection);
+        });
