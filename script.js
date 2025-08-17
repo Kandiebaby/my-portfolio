@@ -82,3 +82,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Typed.js for the introduction sectio
+    var typed = new Typed("#typed-output", {
+        strings: [
+                "Welcome to my Portfolio." , 
+                 "Checkout my projects below.",
+         ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true,
+        showCursor: true
+    });
+
+        // Remove duplicate Typed.js initialization if not needed
+        // var typed = new Typed("#typed-output", options);
+    });

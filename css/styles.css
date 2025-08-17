@@ -53,6 +53,14 @@ header .name {
     font-weight: bold;
     margin-left: 20px;
 }
+#typed-output {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5f0505;
+    margin-top: 10px;
+    min-height: 30px; /* Ensure space is reserved even when empty */
+}
+
 /* Navigation bar container */
 nav {
     background-color: #f78e8e;
