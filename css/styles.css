@@ -13,6 +13,17 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+h2 {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+
+section.visible h2 {
+    transform: translateY(0);
+    opacity: 0;
+}
+
 /*light theme*/
 body {
     background-color: #f4bdbd;
@@ -27,6 +38,14 @@ nav {
 button {
     background-color: #f78e8e;
     color: white;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+button:hover {
+    background-color: #e67e7e;
+    color: white;
+    transform: scale(1.05);
 }
 
 /*dark theme*/
@@ -263,9 +282,6 @@ nav ul li:hover {
     color: #333;
 }
 
-
-
-    
 
 form {
     display: flex;
